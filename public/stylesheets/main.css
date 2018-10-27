@@ -1,0 +1,142 @@
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url("../images/landscape1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-size: 150%;
+    color: white;
+}
+
+html {
+    overflow-y: hidden;
+}
+
+hr {
+    height: 3px;
+}
+
+.divBox {
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px;
+}
+
+#titleRow {
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+#leftColForm {
+    position: relative;
+    left: 100px;
+}
+
+#cityField {
+    width: 50%;
+    float: left;
+}
+
+#weatherButton {
+    float: left;
+    position: relative;
+    left: 10%;
+}
+
+ul {
+    list-style: square;
+    position: relative;
+    right: 26px;
+    padding-bottom: 0;
+}
+
+li {
+    padding-bottom: 0;
+}
+
+#bigContainer {
+    height: 50%;
+}
+
+#weatherRow {
+    height: 55%;
+}
+
+#weatherForm {
+    max-height: 50%;
+}
+
+#suggestions {
+    float: left;
+    max-height: 300px;
+    width: 400px;
+    overflow-y: scroll;
+}
+
+#suggestions ul {
+    list-style: none;
+}
+
+.toFadeIn {
+    visibility: hidden;
+    transition: visibility 2s;
+}
+
+#step2div {
+    padding: 30px;
+}
+
+#stackRow {
+    min-height: 100vh;
+}
+
+#stackCell {
+    background-image: url("../images/stack2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+#defineCell {
+    background-image: url("../images/writing.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    overflow-y: scroll;
+    color: black;
+}
+
+#questionField {
+    width: 30%;
+}
+
+#questionButton {
+    position: relative;
+    top: 10px;
+}
+
+#myDictionary {
+    width: 30%;
+}
+
+#dictionaryButton {
+    position: relative;
+    top: 10px;
+}
+
+#stackExchange {
+    position: relative;
+}
+
+a {
+    color: #FFFFFF;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <form>
+        Enter a Word to define: <input type="text" id="myDictionary" value=""><br>
+        <button id="dictionaryButton">Submit</button>
+    </form><br>
+    <div id="definitions"></div>
+    <script>
+        $("#dictionaryButton").click(function(event) {
+            event.preventDefault();
+            var url = "dictionary?q=" + $("#myDictionary").val();
+            console.log(url);
+            $.getJSON(url, function(data) {
+                console.log(data);
+                if (data.length > 0) {
+                    var everything = "<ul>";
+                    $.each(data, function(i, item) {
+                        everything += "<li>" + data[i].defenition + "</li>";
+                    })
+                    everything += "</ul>";
+                } else {
+                    var everything = "No results for <b>" + $("#myDictionary").val() + "</b>";
+                }
+                $("#definitions").html(everything);
+
+            })
+        })
+    </script>
+</body>
+
+</html>
